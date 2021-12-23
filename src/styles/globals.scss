@@ -145,3 +145,32 @@ button {
     background-color: var(--button-quaternary-hover);
   }
 }
+
+.main-content {
+  flex-basis: 100%;
+}
+
+.sidebar {
+  flex-basis: 25rem;
+  margin-right: var(--horizontal-spacing);
+  &__block {
+    background-color: var(--color-white);
+    border-radius: 10px;
+    margin-bottom: var(--vertical-spacing);
+    min-height: 8.5625rem;
+  }
+  &__block:nth-child(1) {
+    background: url("/images/background-header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    align-items: flex-end;
+    color: var(--color-white);
+    padding: 1em;
+    h2 {
+      color: var(--color-white);
+      font-weight: bold;
+    }
+  }
+}
