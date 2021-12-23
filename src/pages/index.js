@@ -10,10 +10,34 @@ export default function Home() {
             </div>
           </div>
           <div className="sidebar__block">
-            <h1>Suggestions</h1>
+            <ul>
+              <li>All</li>
+              <li>UI</li>
+              <li>UX</li>
+              <li>Enhancement</li>
+              <li>Bug</li>
+              <li>Feature</li>
+            </ul>
           </div>
           <div className="sidebar__block">
-            <h1>Roadmap</h1>
+            <div className="sidebar__heading">
+              <h3>Roadmap</h3>
+              <a href="#">View</a>
+            </div>
+            <ul>
+              <li>
+                <div>Planned</div>
+                <div>2</div>
+              </li>
+              <li>
+                <div>In-Progress</div>
+                <div>3</div>
+              </li>
+              <li>
+                <div>Live</div>
+                <div>5</div>
+              </li>
+            </ul>
           </div>
         </aside>
         <main className="main-content">
