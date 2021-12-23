@@ -1,0 +1,147 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&family=Space+Mono&display=swap');
+
+:root {
+  //colors
+  --primary-color: hsl(282, 83%, 52%);
+  --primary-accent: hsl(14,  83%, 74%);
+  --primary-background: hsl(231, 100%, 97%);
+  --secondary-color: hsl(230, 76%, 59%);
+  --secondary-accent: hsl(204, 94%, 68%);
+  --secondary-background: hsl(230, 60%, 98%);
+  --tertiary-color: hsl(230, 31%, 31%);
+  --heading-color: hsl(231, 33%, 34%);
+  --paragraph-color: hsl(224, 20%, 49%);
+  --color-white: hsl(0, 100%, 100%);
+  //typography
+  --primary-font: 'Jost', sans-serif;
+  --base-font-size: 16px;
+  --h1-font-size: 1.5rem; //24px
+  --h2-font-size: 1.25rem; //20px
+  --h3-font-size: 1.125rem; //18px
+  --h4-font-size: 0.875rem; //14px
+  --primary-body-font-size: 1rem; //16px
+  --secondary-body-font-size: 0.9375rem; //15px
+  --tertiary-body-font-size: 0.8125rem; //13px
+  //line height
+  --h1-line-height: 35px;
+  --h2-line-height: 29px;
+  --h3-line-height: 26px;
+  --h4-line-height: 20px;
+  --primary-body-line-height: 23px;
+  --secondary-body-line-height: 22px;
+  --tertiary-body-line-height: 19px;
+  //letter spacing
+  --h1-letter-spacing: -0.33px;
+  --h2-letter-spacing: -0.25px;
+  --h3-letter-spacing: -0.25px;
+  --h4-letter-spacing: -0.2px;
+  //buttons
+  --button-primary: var(--primary-color);
+  --button-primary-hover: #C75AF6;
+  --button-secondary: var(--secondary-color);
+  --button-secondary-hover: #7C91F9;
+  --button-tertiary: var(--tertiary-color);
+  --button-tertiary-hover: #656EA3;
+  --button-quaternary: #D73737;
+  --button-quaternary-hover: #E98888;
+  //spacing
+  --horizontal-spacing: 1.875rem;
+  --vertical-spacing: 1.5625rem;
+}
+
+html,
+body {
+  background-color: #F2F2F2;
+  font-family: var(--primary-font);
+  font-size: var(--base-font-size);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--heading-color);
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  letter-spacing: var(--h1-letter-spacing);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  letter-spacing: var(--h2-letter-spacing);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+  line-height: var(--h3-line-height);
+  letter-spacing: var(--h3-letter-spacing);
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+  line-height: var(--h4-line-height);
+  letter-spacing: var(--h4-letter-spacing);
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  color: var(--color-white);
+  cursor: pointer;
+  padding: 0.75em 2.25em; 
+}
+
+.wrapper {
+  display: flex;
+  max-width: 1110px;
+  margin: 5rem auto 0;
+}
+
+.primary-body-copy {
+  font-size: var(--primary-body-font-size);
+  line-height: var(--primary-body-line-height);  
+}
+
+.secondary-body-copy {
+  font-size: var(--secondary-body-font-size);
+  line-height: var(--secondary-body-line-height);  
+}
+
+.tertiary-body-copy {
+  font-size: var(--tertiary-body-font-size);
+  line-height: var(--tertiary-body-line-height);  
+}
+
+.primary-btn {
+  background-color: var(--button-primary);
+  &:hover {
+    background-color: var(--button-primary-hover);
+  }
+}
+
+.secondary-btn {
+  background-color: var(--button-secondary);
+  &:hover {
+    background-color: var(--button-secondary-hover);
+  }
+}
+
+.tertiary-btn {
+  background-color: var(--button-tertiary);
+  &:hover {
+    background-color: var(--button-tertiary-hover);
+  }
+}
+
+.quaternary-btn {
+  background-color: var(--button-quaternary);
+  &:hover {
+    background-color: var(--button-quaternary-hover);
+  }
+}
