@@ -348,6 +348,36 @@ header {
       margin-right: 0.5em;
     }
   }
+  &.empty {
+    border-radius: 10px;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 37.5rem;
+    img {
+      width: 8.125rem;
+      margin-bottom: 4.0625rem;
+    }
+  }
+  &__empty-content {
+    max-width: 25.625rem;
+    text-align: center;
+    h1 {
+      font-weight: 700;
+      margin-bottom: 1.5625rem;
+    }
+    p {
+      margin-bottom: 3.125rem;
+    }
+    button { //need to standardize and streamline this
+      background-color: var(--button-primary);
+      &:hover {
+        background-color: var(--button-primary-hover);
+      }
+    }
+  }
 }
 
 //need to standardize primary button

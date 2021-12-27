@@ -47,38 +47,26 @@ export default function Home() {
                 <img src="/images/bulb.png" />
                 <h3>0 Suggestions</h3>
               </div>
-              <select>
-                 <option>Most Upvotes</option>
-                 <option>Least Upvotes</option>
-                 <option>Most Comments</option>
-                 <option>Least Comments</option>
-              </select>
+              <div className="custom-select">
+                <label>Sort By :</label>
+                <select>
+                  <option>Most Upvotes</option>
+                  <option>Least Upvotes</option>
+                  <option>Most Comments</option>
+                  <option>Least Comments</option>
+                </select>
+              </div>
             </div>
             <div>
               <button>+ Add Feedback</button>
             </div>
           </header>
-          <div className="suggestions">
-            <div className="suggestions__block">
-              <div className="suggestions__content-container">
-                <div className="suggestions__upvotes">
-                  <button>42</button>
-                </div>
-                <div className="suggestions__content">
-                  <div className="suggestions__title">
-                    <h3>Ability to follow others</h3>
-                  </div>
-                  <div className="suggestions__description">
-                    <p className="primary-body-copy">Stay updated on comments and solutions other people post.</p>
-                  </div>
-                  <div className="suggestions__category">
-                    <button>Enhancement</button>
-                  </div>
-                </div>
-              </div>
-              <div className="suggestions__comments">
-                <span>1</span>
-              </div>
+          <div className="suggestions empty">
+            <img src="/images/illustration-empty.svg" />
+            <div className="suggestions__empty-content">
+              <h1>There is no feedback yet.</h1>
+              <p className="primary-body-copy">Got a suggestion? Found a bug that needs to be squashed? We love hearing about new ideas to improve our app.</p>
+              <button>+ Add Feedback</button>
             </div>
           </div>
         </main>
