@@ -146,6 +146,37 @@ button {
   }
 }
 
+//======================= Header Section
+header {
+  border-radius: 10px;
+  background-color: var(--tertiary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  margin-bottom: var(--vertical-spacing);
+  h3 {
+    color: var(--color-white);
+    font-weight: 700;
+    margin-left: 1em;
+    margin-right: 2em;
+    white-space: nowrap; //maybe need to update this
+  }
+  & > div {
+    display: flex;
+    div {
+      display: flex;
+    }
+  }
+  button {
+    background-color: var(--button-primary);
+    &:hover {
+      background-color: var(--button-primary-hover);
+    }
+  }
+}
+
+//======================= Main Content Area
 .main-content {
   flex-basis: 100%;
 }
@@ -211,7 +242,6 @@ button {
     flex-direction: column;
     ul {
       width: 100%;
-      list-style: disc;
     }
     li {
       display: flex;
@@ -242,3 +272,92 @@ button {
     }
   }
 }
+
+//======================= Suggestion Blocks
+.suggestions {
+  &__block {
+    border-radius: 10px;
+    background-color: var(--color-white);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--vertical-spacing);
+    padding: 2em 2.5em;
+  }
+  &__content-container {
+    display: flex;
+  }
+  &__upvotes {
+    margin-right: 1.5em;
+    button {
+      background-color: var(--primary-background-color);
+      border-radius: 10px;
+      color: var(--secondary-color);
+      cursor: pointer;
+      padding: 0.75em 1em;
+      margin-right: 0.75em;
+      margin-bottom: 0.75em;
+      &:before {
+        display: block;
+        content: "^";
+        color: var(--secondary-color);
+      }
+      &:hover {
+        background-color: var(--secondary-color);
+        color: var(--color-white);
+        &:before {
+          color: var(--color-white);
+        }
+      }
+    }
+  }
+  &__title {
+    font-weight: 700; //standardize font weight
+    margin-bottom: 0.5em;
+  }
+  &__description {
+    margin-bottom: 1em;
+  }
+  &__category {
+    button {
+      background-color: var(--primary-background-color);
+      border-radius: 10px;
+      color: var(--secondary-color);
+      font-size: 13px;
+      cursor: pointer;
+      padding: 0.75em 1em;
+      margin-right: 0.75em;
+      margin-bottom: 0.75em;
+      &:hover {
+        background-color: var(--secondary-color);
+        color: var(--color-white);
+        &:before {
+          color: var(--color-white);
+        }
+      }
+    }
+  }
+  &__comments {
+    span {
+      display: flex;
+    }
+    span:before {
+      display: block;
+      content: url("/images/icon-comments.svg");
+      margin-right: 0.5em;
+    }
+  }
+}
+
+//need to standardize primary button
+//background-color: var(--primary-background-color);
+//border-radius: 10px;
+//color: var(--secondary-color);
+//cursor: pointer;
+//padding: 0.5em 0.75em;
+//margin-right: 0.75em;
+//margin-bottom: 0.75em;
+
+
+//need to create variable for 10px
