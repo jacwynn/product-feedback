@@ -1,0 +1,43 @@
+//======================= Header
+.header {
+    border-radius: 10px;
+    background-color: var(--tertiary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    margin-bottom: var(--vertical-spacing);
+    h3 {
+      color: var(--color-white);
+      font-weight: 700;
+      margin-left: 1em;
+      margin-right: 2em;
+      white-space: nowrap; //maybe need to update this
+    }
+    & > div {
+      display: flex;
+      div {
+        display: flex;
+      }
+    }
+    button {
+      background-color: var(--button-primary);
+      &:hover {
+        background-color: var(--button-primary-hover);
+      }
+    }
+  }
+
+//======================= Custom Select
+.headerSelect {
+    align-items: center;
+    label {
+        color: var(--primary-background-color);
+    }
+    select {
+        border: 0;
+        background-color: var(--tertiary-color);
+        color: var(--primary-background-color);
+        font-weight: 700;
+    }
+}

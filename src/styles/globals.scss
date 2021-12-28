@@ -146,131 +146,9 @@ button {
   }
 }
 
-//======================= Header Section
-header {
-  border-radius: 10px;
-  background-color: var(--tertiary-color);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1em;
-  margin-bottom: var(--vertical-spacing);
-  h3 {
-    color: var(--color-white);
-    font-weight: 700;
-    margin-left: 1em;
-    margin-right: 2em;
-    white-space: nowrap; //maybe need to update this
-  }
-  & > div {
-    display: flex;
-    div {
-      display: flex;
-    }
-  }
-  button {
-    background-color: var(--button-primary);
-    &:hover {
-      background-color: var(--button-primary-hover);
-    }
-  }
-}
-
 //======================= Main Content Area
 .main-content {
   flex-basis: 100%;
-}
-
-.sidebar {
-  flex-basis: 25rem;
-  margin-right: var(--horizontal-spacing);
-  &__block {
-    display: flex;
-    align-items: center;
-    background-color: var(--color-white);
-    border-radius: 10px;
-    margin-bottom: var(--vertical-spacing);
-    min-height: 8.5625rem;
-    padding: 1em;
-  }
-  &__heading {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    h3 {
-      font-weight: 700;
-      margin-bottom: 1.5em;
-    }
-    a {
-      font-size: var(--tertiary-body-font-size);
-      font-weight: 600;
-    }
-  }
-  &__block:nth-child(1) {
-    background: url("/images/background-header.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-    display: flex;
-    align-items: flex-end;
-    color: var(--color-white);
-    h2 {
-      color: var(--color-white);
-      font-weight: bold;
-    }
-  }
-  &__block:nth-child(2) {
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    li {
-      background-color: var(--primary-background-color);
-      border-radius: 10px;
-      color: var(--secondary-color);
-      cursor: pointer;
-      padding: 0.5em 0.75em;
-      margin-right: 0.75em;
-      margin-bottom: 0.75em;
-      &:hover {
-        background-color: var(--secondary-color);
-        color: var(--color-white);
-      }
-    }
-  }
-  &__block:nth-child(3) {
-    flex-direction: column;
-    ul {
-      width: 100%;
-    }
-    li {
-      display: flex;
-      justify-content: space-between;
-      color: var(--paragraph-color);
-      margin-bottom: 0.75em;
-      text-indent: 1.5rem;
-      div:nth-child(2) {
-        font-weight: 700;
-      }
-      &:before {
-        position: absolute; 
-        content: '';
-        border-radius: 0.375rem;
-        height: 0.75rem;
-        width: 0.75rem;
-        margin-right: 0.5rem;
-      }
-      &:nth-child(1):before {
-        background-color: var(--primary-accent);
-      }
-      &:nth-child(2):before {
-        background-color: var(--primary-color);
-      }
-      &:nth-child(3):before {
-        background-color: var(--secondary-accent);
-      }
-    }
-  }
 }
 
 //======================= Suggestion Blocks
@@ -344,7 +222,7 @@ header {
     }
     span:before {
       display: block;
-      content: url("/images/icon-comments.svg");
+      // content: url("/images/icon-comments.svg");
       margin-right: 0.5em;
     }
   }

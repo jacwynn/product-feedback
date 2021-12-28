@@ -1,0 +1,91 @@
+//======================= Sidebar
+.sidebar {
+    flex-basis: 25rem;
+    margin-right: var(--horizontal-spacing);
+    &Block {
+      display: flex;
+      align-items: center;
+      background-color: var(--color-white);
+      border-radius: 10px;
+      margin-bottom: var(--vertical-spacing);
+      min-height: 8.5625rem;
+      padding: 1em;
+    }
+    &Heading {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      h3 {
+        font-weight: 700;
+        margin-bottom: 1.5em;
+      }
+      a {
+        font-size: var(--tertiary-body-font-size);
+        font-weight: 600;
+      }
+    }
+    &Block:nth-child(1) {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50%;
+      display: flex;
+      align-items: flex-end;
+      color: var(--color-white);
+      h2 {
+        color: var(--color-white);
+        font-weight: bold;
+      }
+    }
+    &Block:nth-child(2) {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      li {
+        background-color: var(--primary-background-color);
+        border-radius: 10px;
+        color: var(--secondary-color);
+        cursor: pointer;
+        padding: 0.5em 0.75em;
+        margin-right: 0.75em;
+        margin-bottom: 0.75em;
+        &:hover {
+          background-color: var(--secondary-color);
+          color: var(--color-white);
+        }
+      }
+    }
+    &Block:nth-child(3) {
+      flex-direction: column;
+      ul {
+        width: 100%;
+      }
+      li {
+        display: flex;
+        justify-content: space-between;
+        color: var(--paragraph-color);
+        margin-bottom: 0.75em;
+        text-indent: 1.5rem;
+        div:nth-child(2) {
+          font-weight: 700;
+        }
+        &:before {
+          position: absolute; 
+          content: '';
+          border-radius: 0.375rem;
+          height: 0.75rem;
+          width: 0.75rem;
+          margin-right: 0.5rem;
+        }
+        &:nth-child(1):before {
+          background-color: var(--primary-accent);
+        }
+        &:nth-child(2):before {
+          background-color: var(--primary-color);
+        }
+        &:nth-child(3):before {
+          background-color: var(--secondary-accent);
+        }
+      }
+    }
+}
