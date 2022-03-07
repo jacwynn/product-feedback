@@ -1,4 +1,5 @@
 import styles from './Header.module.scss';
+import AddFeedbackBtn from '../AddFeedbackBtn';
 
 const Header = () => {
     return (
@@ -18,9 +19,7 @@ const Header = () => {
                     </select>
                 </div>
             </div>
-            <div>
-                <button>+ Add Feedback</button>
-            </div>
+            <AddFeedbackBtn />
         </header>
     )
 }

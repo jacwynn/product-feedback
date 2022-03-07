@@ -11,14 +11,14 @@ export default function Home() {
         <main className="main-content">
           <Header />
           {/* Empty Suggestion */}
-          {/* <div className="suggestions empty">
+          <div className="suggestions empty">
             <EmptySuggestion />
-          </div> */}
+          </div>
 
           {/* Suggestion */}
-          <div className="suggestions">
+          {/* <div className="suggestions">
             <Suggestion />
-          </div>
+          </div> */}
         </main>
       </div>
     </section>
