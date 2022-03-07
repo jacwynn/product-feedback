@@ -5,7 +5,7 @@ import backgroundImage from '../../../public/images/background-header.png';
 const Sidebar = () => {
     return (
     <aside className={styles.sidebar}>
-        <div style={{backgroundImage: `url(${backgroundImage})`}} className={styles.sidebarBlock}>
+        <div style={{backgroundImage: `url(${backgroundImage.src})`}} className={styles.sidebarBlock}>
             <div>
             <h2>Wynn Solutions</h2>
             <p className="secondary-body-copy">Feedback Board</p>
