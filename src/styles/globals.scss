@@ -219,10 +219,11 @@ button {
   &__comments {
     span {
       display: flex;
+      font-weight: 600;
     }
     span:before {
       display: block;
-      // content: url("/images/icon-comments.svg");
+      content: url("/images/icon-comments.svg");
       margin-right: 0.5em;
     }
   }
