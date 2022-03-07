@@ -1,5 +1,7 @@
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
+import EmptySuggestion from '../components/EmptySuggestion';
+import Suggestion from "../components/Suggestion";
 
 export default function Home() {
   return (
@@ -8,13 +10,14 @@ export default function Home() {
         <Sidebar />
         <main className="main-content">
           <Header />
-          <div className="suggestions empty">
-            <img src="/images/illustration-empty.svg" />
-            <div className="suggestions__empty-content">
-              <h1>There is no feedback yet.</h1>
-              <p className="primary-body-copy">Got a suggestion? Found a bug that needs to be squashed? We love hearing about new ideas to improve our app.</p>
-              <button>+ Add Feedback</button>
-            </div>
+          {/* Empty Suggestion */}
+          {/* <div className="suggestions empty">
+            <EmptySuggestion />
+          </div> */}
+
+          {/* Suggestion */}
+          <div className="suggestions">
+            <Suggestion />
           </div>
         </main>
       </div>
