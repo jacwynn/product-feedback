@@ -3,7 +3,14 @@ import styles from './AddFeedbackModal.module.scss';
 const AddFeedbackModal = ({ show }) => {
     return (
         <section className={show ? styles.addFeedbackModal : styles.hideFeedbackModal}>
-            <h5>Add Feedback</h5>
+            <div>
+                <p>Go Back</p>
+                <div className={styles.modalContainer}>
+                    <form>
+                        <h5>Create New Feedback</h5>
+                    </form>
+                </div>
+            </div>
         </section>
     )
 }
